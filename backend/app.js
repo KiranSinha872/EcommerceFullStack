@@ -1,13 +1,19 @@
 const express=require ('express');
 const app=express();
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const {products}=require('./data');
 // console.log(products);
 
 const cors = require('cors');
 app.use(cors());
 
-const PORT = 3000;
+
+
+
+const PORT = process.env.PORT ||3000;
 
 
 
