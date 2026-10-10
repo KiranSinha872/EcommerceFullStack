@@ -19,7 +19,7 @@ function App() {
       // console.log("punima");
       async function getData(){
         console.log(".....loading");
-        let responce=await fetch("http://localhost:3000/api/products");
+        let responce=await fetch("https://ecommercefullstack-xzie.onrender.com/api/products");
            let data=  await responce.json();
           //  console.log(data);
            setProducts(data);
