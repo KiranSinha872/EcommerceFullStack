@@ -1,7 +1,8 @@
 const express=require ('express');
 const app=express();
 
-import dotenv from 'dotenv';
+// CORRECT (CommonJS)
+const dotenv=require('dotenv');
 dotenv.config();
 
 const {products}=require('./data');
